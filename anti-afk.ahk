@@ -7,9 +7,9 @@ macroOn = 0
 forward = w
 backward = s
 
-;possibly save selection from GUI into a config file and read it back in a version 2/3?
+;possibly save selection from GUI into a config file and read it back in a version 2 or 3?
 ;AFKTypeSelection:New     find a way to make it work? unsure if AHK conflicts with other running instances. Probably fine.
-Gui, New , -MinimizeBox, test
+Gui, New , -MinimizeBox, Anti AFK
 Gui, Add, Text, -Center, Please choose anti-afk method for this session:
 Gui, Add, Button, Default -Wrap w80, &Jump
 ; create button, set as default selection, word wrap so it works on all systems with no weirdness(only works on one line buttons), width 80px, enable first character keystroke to confrim, set text to Jump.
